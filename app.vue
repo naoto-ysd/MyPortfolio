@@ -4,11 +4,10 @@
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">
-          <span class="greeting">こんにちは、</span>
-          <span class="name">山田太郎です</span>
+          <span class="name">松屋のガチ勢のポートフォリオ</span>
         </h1>
         <p class="hero-description">
-          フルスタックデベロッパー・UI/UXデザイナー
+          フルスタックエンジニア
         </p>
         <p class="hero-subtitle">
           美しく機能的なWebアプリケーションを作ることに情熱を注いでいます
@@ -64,15 +63,6 @@
               <span class="skill-tag">MongoDB</span>
             </div>
           </div>
-          <div class="skill-category">
-            <h3>デザイン・その他</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Figma</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Git</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -86,36 +76,11 @@
             <div class="project-image">
               <span>🚀</span>
             </div>
-            <h3>Eコマースプラットフォーム</h3>
-            <p>Vue.js + Node.jsで構築したモダンなEコマースサイト</p>
+            <h3>ガチ松</h3>
+            <p>松屋のことを研究したアプリケーション</p>
             <div class="project-tech">
-              <span>Vue.js</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <span>📱</span>
-            </div>
-            <h3>タスク管理アプリ</h3>
-            <p>React + TypeScriptで開発したリアルタイム協業ツール</p>
-            <div class="project-tech">
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Socket.io</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <span>🎨</span>
-            </div>
-            <h3>デザインシステム</h3>
-            <p>企業向けに開発したコンポーネントライブラリ</p>
-            <div class="project-tech">
-              <span>Vue.js</span>
-              <span>Storybook</span>
-              <span>SCSS</span>
+              <span>Next.js</span>
+              <span>Go</span>
             </div>
           </div>
         </div>
@@ -130,14 +95,11 @@
           プロジェクトのご相談やお仕事のお話など、お気軽にご連絡ください。
         </p>
         <div class="contact-buttons">
-          <a href="mailto:your-email@example.com" class="btn btn-primary">
-            メールを送る
-          </a>
           <a href="https://github.com/yourusername" class="btn btn-secondary" target="_blank">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourusername" class="btn btn-secondary" target="_blank">
-            LinkedIn
+          <a href="https://x.com/yourusername" class="btn btn-secondary" target="_blank">
+            X
           </a>
         </div>
       </div>
