@@ -1,0 +1,11 @@
+# AWS設定
+aws_region = "ap-northeast-1"
+
+# プロジェクト設定
+project_name = "myportfolio"
+
+# GitHub設定
+github_owner  = "your-github-username"
+github_repo   = "MyPortfolio"
+github_branch = "main"
+github_token  = "your-github-personal-access-token" 

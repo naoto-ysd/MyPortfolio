@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Build started on `date`
+      - echo Installing dependencies...
+      - npm ci
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Nuxt application...
+      - npm run build
+      - npm run generate
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Syncing files to S3...
+      - aws s3 sync .output/public/ s3://$DEPLOY_BUCKET --delete
+      - echo Deploy completed successfully
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: '.output/public' 
