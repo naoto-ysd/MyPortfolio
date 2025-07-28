@@ -1,6 +1,5 @@
 <template>
   <div class="portfolio-home">
-    <!-- ヒーローセクション -->
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">
@@ -24,7 +23,6 @@
       </div>
     </section>
 
-    <!-- 自己紹介セクション -->
     <section class="about">
       <div class="container">
         <h2 class="section-title">自己紹介</h2>
