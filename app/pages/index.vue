@@ -1,4 +1,8 @@
 <script setup>
+import { useThemeStore } from '~/stores/theme'
+
+const { theme, toggleTheme } = useThemeStore()
+
 // ページのメタ情報を設定
 useHead({
   title: 'ポートフォリオ - 松屋のガチ勢',
@@ -10,10 +14,16 @@ useHead({
   ]
 })
 
-// ページ読み込み時のアニメーション用
+const handleToggleTheme = () => {
+  toggleTheme()
+  localStorage.setItem('theme', theme.value)
+}
+
 onMounted(() => {
-  // 必要に応じてアニメーションロジックを追加
+  theme.value = localStorage.getItem('theme') || 'light'
 })
+
+
 </script>
 
 <template>
