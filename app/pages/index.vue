@@ -1,3 +1,21 @@
+<script setup>
+// ページのメタ情報を設定
+useHead({
+  title: 'ポートフォリオ - 松屋のガチ勢',
+  meta: [
+    {
+      name: 'description',
+      content: 'フルスタックエンジニア 松屋のガチ勢のポートフォリオサイトです。Web開発の実績やスキルをご紹介しています。'
+    }
+  ]
+})
+
+// ページ読み込み時のアニメーション用
+onMounted(() => {
+  // 必要に応じてアニメーションロジックを追加
+})
+</script>
+
 <template>
   <div class="portfolio-home">
     <section class="hero">
@@ -104,24 +122,6 @@
     </section>
   </div>
 </template>
-
-<script setup>
-// ページのメタ情報を設定
-useHead({
-  title: 'ポートフォリオ - 松屋のガチ勢',
-  meta: [
-    {
-      name: 'description',
-      content: 'フルスタックエンジニア 松屋のガチ勢のポートフォリオサイトです。Web開発の実績やスキルをご紹介しています。'
-    }
-  ]
-})
-
-// ページ読み込み時のアニメーション用
-onMounted(() => {
-  // 必要に応じてアニメーションロジックを追加
-})
-</script>
 
 <style scoped>
 .portfolio-home {
