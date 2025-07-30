@@ -1,7 +1,10 @@
 <script setup>
 import { useThemeStore } from '~/stores/theme'
+import { storeToRefs } from 'pinia'
 
-const { theme, toggleTheme } = useThemeStore()
+const themeStore = useThemeStore()
+const { theme } = storeToRefs(themeStore)
+const { toggleTheme } = themeStore
 
 // ページのメタ情報を設定
 useHead({
