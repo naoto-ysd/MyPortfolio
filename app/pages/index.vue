@@ -1,10 +1,9 @@
 <script setup>
-import { useThemeStore } from '~/stores/theme'
 import { storeToRefs } from 'pinia'
+import { useThemeStore } from '~/stores/theme'
 
 const themeStore = useThemeStore()
 const { theme } = storeToRefs(themeStore)
-const { toggleTheme } = themeStore
 
 // ページのメタ情報を設定
 useHead({
@@ -16,11 +15,6 @@ useHead({
     }
   ]
 })
-
-const handleToggleTheme = () => {
-  toggleTheme()
-  localStorage.setItem('theme', theme.value)
-}
 
 onMounted(() => {
   theme.value = localStorage.getItem('theme') || 'light'
